@@ -1,0 +1,15 @@
+
+
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+    <h1 class="text-center mt-5" id="blogdetailtitle">{{ blogg.title }}</h1>
+
+
+    <h5 class="text-center text-muted mb-5">{{  blogg.date  }}</h5>
+
+
+    <h4>{{ blogg.description|safe}}</h4>
+
+{%  endblock  %}
